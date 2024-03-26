@@ -1,0 +1,529 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar{
+    height: 60px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    position: sticky;
+    top: 0.05%;
+    
+}
+
+header{
+    display: flex; /* to keep many items in same line flex is used. Otherwise amazon logo, mapicon, search all will be showned line by line */
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.logo{
+    color: white;
+    font-size: large;
+    display: flex;
+    align-items: center;
+}
+
+#logotxt{
+    position: relative;
+    right:7%;
+    top: 5%;
+    font-size: small;
+}
+.logopic{
+    height: 50px;
+    width: 113px;
+    background-image: url(/images/amazon_logo.png);
+    background-size: cover;
+}
+
+/* wherever there is border class on hovering on it white border will appear */
+.border{
+    border: 1px solid transparent;
+}
+
+.border:hover{
+    border-color: rgb(226, 217, 217);
+}
+
+.map{
+    color: #cccccc;
+}
+
+.mapicon{
+    display: flex;
+    color: white;
+}
+
+#map1{
+    margin-left:1em;
+}
+
+#map2{
+    margin-left: 0.25em;
+    font-weight: bold;
+}
+
+.searchbar{
+    display: flex;
+    justify-content: space-around; 
+    height:40px;
+    width: 500px;
+    align-items: center;
+    
+}
+
+#barb{
+    width: 410px;
+    height: 40px;
+    border: none;
+    font-size: 1rem;
+}
+
+#bara{
+    border: none;
+    height: 40px;
+    width: 45px;
+    background-color: rgb(202, 198, 198);
+    display: flex;
+    justify-content:center;
+    border-top-left-radius: 8% ;
+    border-bottom-left-radius: 8%;
+}
+
+.searchbar select{
+    background-color: transparent;
+    border: none;
+}
+
+#barc{
+    height: 40px;
+    width: 45px;
+    background-color: #f39609fd;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-right-radius: 8% ;
+    border-bottom-right-radius: 8%;
+}
+
+.searchbar:hover{
+    border: 3px solid orange;
+    border-style: ridge;
+}
+
+.langicon{
+    background-image: url(/images/india.png);
+    background-size: cover;
+    height: 16.2px;
+    width: 21.6px;
+
+}
+
+.langicon option{
+    font-weight: bold;
+}
+
+.lang{
+    display: flex;
+    height: 16.2px;
+    
+}
+
+#lang{
+    border: none;
+    position: relative;
+    left:8%;
+    background-color: transparent;
+    color: white;
+}
+
+.smallfont{
+    font-size:79%;
+}
+.bigfont{
+    font-size:100%;
+    font-weight: bold;
+}
+
+.carticon i{
+    font-size:  30px;
+}
+
+/* navbar ended  */
+
+.headerbottom{
+    height: 45px;
+    width: 100%;
+    background-color: #222f3d;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 14px;
+}
+
+.all{
+    color: white;
+    font-weight: bold;
+    width:40px;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.options{
+    color: rgba(255, 255, 255, 0.884);
+    width:60%;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+}
+
+.festival{
+    color: white;
+    display:flex;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: bold;
+    
+}
+
+.smily{
+    color: rgb(255, 68, 0);
+    font-size: 30px;
+    
+}
+
+.separator{
+    margin-right: 1%;
+    
+}
+/* header bottom panel ended */
+
+.herosec{
+    background-image:url(/images/hero_image.jpg);
+    background-size: cover;
+    height:350px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    
+}
+
+.herotxt{
+    background-color: white;
+    height:40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-size: 0.85rem;
+    margin-bottom: 2%;
+    width:80%;
+
+}
+
+.herotxt a{
+    color: #007185;
+    text-decoration: none;
+}
+
+/* hero section ends here */
+
+body{
+    background-color: #e2e7e6;
+}
+
+.shop-sec{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: #e2e7e6;
+    height: 1000%;
+    
+}
+
+.box{
+    display: inline;
+    width:23%;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: white;
+    margin-top: 1.5%;
+    
+    
+}
+
+
+
+.boximg{
+    background-image: url(/images/box1_image.jpg);
+    background-size: cover;
+    height:70%;
+    width: 90%;
+}
+
+
+
+.boxlink{
+    align-self: flex-start;
+    margin-left:5%;
+    color: #007185;
+    margin-bottom: 5%;
+}
+
+.shop-sec h2{
+   
+    margin-top: 2%;
+    
+}
+
+.discountbox h2{
+    margin-left: 4%;
+}
+
+.boximg2{
+    background-image: url(/images/box2_image.jpg);
+    background-size: cover;
+    height:70%;
+    width: 90%;
+}
+
+.boximg3{
+    background-image: url(/images/box3_image.jpg);
+    background-size: cover;
+    height:70%;
+    width: 90%;
+}
+
+.boximg4{
+    background-image: url(/images/box4_image.jpg);
+    background-size: cover;
+    height:70%;
+    width: 90%;
+}
+
+.boximg5{
+    background-image: url(/images/box5_image.jpg);
+    background-size: cover;
+    height:70%;
+    width: 90%;
+}
+
+.boximg6{
+    background-image: url(/images/box6_image.jpg);
+    background-size: cover;
+    height:70%;
+    width: 90%;
+}
+
+.boximg7{
+    background-image: url(/images/box7_image.jpg);
+    background-size: cover;
+    height:70%;
+    width: 90%;
+}
+
+.boximg8{
+    background-image: url(/images/box8_image.jpg);
+    background-size: cover;
+    height:70%;
+    width: 90%;
+}
+
+.discountbox{
+    display: inline;
+    width:23%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: white;
+    margin-top: 1.5%;
+    
+    
+}
+
+.boximg9{
+    background-image: url(/images/box9_image.jpg);
+    background-size: cover;
+    height:70%;
+    width: 90%;
+}
+
+.boximg10{
+    background-image: url(/images/box10_image.jpg);
+    background-size: cover;
+    height:70%;
+    width: 90%;
+}
+
+.boximg11{
+    background-image: url(/images/box11_image.jpg);
+    background-size: cover;
+    height:70%;
+    width: 90%;
+}
+
+.boximg12{
+    background-image: url(/images/box12_image.jpg);
+    background-size: cover;
+    height:70%;
+    width: 90%;
+}
+
+/* end of shop-swction */
+
+footer{
+    margin-top: 2%;
+    background-color:  #222f3d;
+    color: white;
+    height:769px;
+}
+
+.footpanel1{
+    height:49px;
+    background-color: #33485e;
+    color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    flex-wrap: wrap;
+}
+
+.footpanel2{
+    height:35%;
+    background-color: #222f3d;
+}
+
+.footelements{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 2%;
+}
+
+.footelements li{
+    list-style-type: none;
+    margin-top: 4%;
+    color: #cccccc;
+}
+
+.footelements li:hover{
+   text-decoration: underline;
+}
+
+.footpanel3{
+    border-top: 1px solid #cccccc ;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+
+}
+
+.footpanel3 select{
+    margin-top: 38%;
+    background-color: transparent;
+    color:#cccccc;
+    width: 117px;
+    height: 30px;
+}
+
+.footlogo{
+    margin-top: 3% ;
+    height: 50px;
+    width: 113px;
+    background-image: url(/images/amazon_logo.png);
+    background-size: cover;
+    margin-right: 4%;
+}
+
+.footpanel4{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    margin-top: 2%;
+    color: #dddd;
+    font-size: 12px;
+    width:70%;
+}
+.footpanel4 p{
+    margin-right: 2%;
+    margin-top: 1%;
+}
+
+.footpanel4 p:hover{
+    text-decoration: underline;
+
+}
+
+.footpanel4-main{
+    display: flex;
+    justify-content: center;
+}
+
+.footpanel5{
+    background-color: #131a22;
+    height: 15%;
+    margin-top: 6%;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.panel5items{
+    margin-top: 2%;
+    display:flex;
+    width:70%;
+    height:75%;
+    flex-wrap: wrap;
+    
+
+}
+
+.panel5items li{
+    list-style-type: none;
+    font-size: 12px;
+    color: #a3a3a399;
+    margin-top: 2.5%;
+    
+}
+
+.panel5items div{
+    margin-right: 8%;
+    margin-top: 2%;
+}
+
+.panel5items h6{
+    color: #d8d2d2;
+    margin-top: 2%;
+}
+
+.panel5items div:hover{
+    text-decoration: underline;
+    text-decoration-color: #cccccc;
+}
+
+.footerend{
+    display:flex;
+    background-color: #131a22;
+    color: #d8d2d2;
+    color: #d8d2d2;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 25%;
+}
+
+.footerend p{
+    display: inline;
+}
+
